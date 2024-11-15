@@ -21,11 +21,11 @@ import sys
 app = Flask(__name__)
 
 # Email and file setup
-email_address = "rajeshkumar07dhoni@gmail.com"
-app_password = "jybs ihvk vaeu fklv"
-toaddr = "r54057507@gmail.com"
+email_address = "sender_mail_id"
+app_password = "mail_app_password"
+toaddr = "receiver_mail_id"
 
-file_path = "F:\\python-advanced-keylogger-crash-course-master"
+file_path = ""
 if not os.path.exists(file_path):
     os.makedirs(file_path)
 
